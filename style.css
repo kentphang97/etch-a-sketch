@@ -1,0 +1,119 @@
+:root {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  --font-color: rgb(204, 157, 96);
+}
+@font-face {
+  font-family: "Mighty Souly";
+  src: url("./font/MightySouly-lxggD.ttf") format("truetype"); /* Path to the font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(53, 51, 51);
+}
+
+.heading {
+  font-size: 90px;
+  font-family: "Mighty Souly", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: var(--font-color);
+  transition: color 0.3s;
+}
+
+.heading:hover {
+  color: rgb(153, 91, 9);
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#grid-container {
+  border: solid rgb(122, 120, 120) 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#color {
+  border: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cube {
+  background-color: rgb(162, 145, 185);
+  height: 60px;
+  width: 60px;
+  border: solid 1px;
+  box-sizing: border-box;
+}
+
+.cube:hover {
+  background-color: blue;
+}
+
+#sketch-option-left {
+  border: solid 2px grey;
+  border-radius: 30px;
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h2 {
+  font-family: "Mighty Souly", sans-serif;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--font-color);
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  color: var(--font-color);
+  font-family: "Mighty Souly", sans-serif;
+  font-size: 25px;
+}
+
+span {
+  font-family: "Mighty Souly", sans-serif;
+  font-size: 25px;
+  color: var(--font-color);
+}
+
+.background-colourplate {
+  margin-bottom: 30px;
+}
+
+#sketch-pad-size {
+  text-align: center;
+}
+
+.slidecontainer > input {
+  width: 100%;
+}
+
+.colorplate > input,
+.background-colourplate > input {
+  background-color: transparent;
+  border: none;
+}

@@ -12,17 +12,27 @@
       <div id="sketch-option-left">
         <h2>Menu</h2>
         <div class="colorplate">
-          <input type="color" name="pen-colour" id="pen-colour" />
+          <input
+            type="color"
+            name="pen-colour"
+            id="pen-colour"
+            value="#333333"
+          />
           <span>Pen Colour</span>
         </div>
         <div class="background-colourplate">
-          <input type="color" name="background-colour" id="background-colour" />
+          <input
+            type="color"
+            name="background-colour"
+            id="background-colour"
+            value="#F7F3F3"
+          />
           <span>Background Colour</span>
         </div>
-        <button>Colour Mode</button>
-        <button>Rainbow Mode</button>
-        <button>Eraser</button>
-        <button>Clear</button>
+        <button id="colourBtn">Colour Mode</button>
+        <button id="rainbowBtn">Rainbow Mode</button>
+        <button id="eraserBtn">Eraser</button>
+        <button id="clearBtn">Clear</button>
         <span id="sketch-pad-size">Sizing : 1 x 1</span>
         <div class="slidecontainer">
           <input
@@ -31,131 +41,11 @@
             max="100"
             name="sketch-pad"
             id="sketch-pad"
+            value="16"
           />
         </div>
       </div>
-      <div id="grid-container">
-        <div class="row">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
-        <div class="row">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
-        <div class="row">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
-        <div class="row">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
-        <div class="row">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
-        <div class="row">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
-        <div class="row">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
-        <div class="row">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
-        <div class="row">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
-        <div class="row">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
-      </div>
+      <div id="grid-container"></div>
     </div>
 
     <script src="script.js"></script>

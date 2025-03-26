@@ -4,6 +4,9 @@
   border: 0;
   box-sizing: border-box;
   --font-color: rgb(204, 157, 96);
+  --primary-dark: #333;
+  --primary-light: #ededed;
+  --secondary-light: #fefefe;
 }
 @font-face {
   font-family: "Mighty Souly";
@@ -25,6 +28,7 @@ body {
   padding: 30px;
   color: var(--font-color);
   transition: color 0.3s;
+  margin-left: 100px;
 }
 
 .heading:hover {
@@ -32,7 +36,8 @@ body {
 }
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 50px;
 }
 
 #grid-container {
@@ -40,6 +45,8 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  width: 750px;
+  height: 750px;
 }
 
 #color {
@@ -56,15 +63,13 @@ body {
 }
 
 .cube {
-  background-color: rgb(162, 145, 185);
-  height: 60px;
-  width: 60px;
+  background-color: rgb(238, 235, 241);
   border: solid 1px;
   box-sizing: border-box;
 }
 
 .cube:hover {
-  background-color: blue;
+  background-color: rgb(167, 167, 173);
 }
 
 #sketch-option-left {
@@ -116,4 +121,10 @@ span {
 .background-colourplate > input {
   background-color: transparent;
   border: none;
+}
+
+button.active {
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  border-color: var(--primary-light);
 }
